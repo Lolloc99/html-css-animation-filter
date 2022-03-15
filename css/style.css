@@ -212,4 +212,86 @@
 /* /Soluzione esercizio 12 */
 
 /* Soluzione esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: fullMoveTop;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes fullMoveTop {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 55px;
+    }
+    75% {
+        left: 0;
+        top: 55px;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: fullMoveBottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes fullMoveBottom {
+    0% {
+        right: 10%;
+        bottom: -10px;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 55px;
+    }
+    75% {
+        right: 0;
+        bottom: 55px;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        right: 10%;
+        bottom: -10px;
+    }
+}
 /* /Soluzione esercizio 13 */
+
+/* .ex-12-top-white, .ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px; */
